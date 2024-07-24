@@ -54,9 +54,9 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/ppc64le-cloud/powervs-utils v0.0.0-20240610070307-1c0d75a5c247
 	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.71.2
-	github.com/prometheus/client_golang v1.19.1
+	github.com/prometheus/client_golang v1.19.0
 	github.com/prometheus/client_model v0.6.1
-	github.com/prometheus/common v0.53.0
+	github.com/prometheus/common v0.52.2
 	github.com/spf13/cobra v1.8.0
 	github.com/spf13/pflag v1.0.6-0.20210604193023-d5e0c0615ace
 	github.com/stretchr/testify v1.9.0
@@ -155,7 +155,7 @@ require (
 	github.com/golang-jwt/jwt/v5 v5.2.1 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/btree v1.1.2 // indirect
-	github.com/google/cel-go v0.20.1 // indirect
+	github.com/google/cel-go v0.17.8 // indirect
 	github.com/google/gnostic-models v0.6.8 // indirect
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
@@ -176,7 +176,6 @@ require (
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/moby/spdystream v0.2.0 // indirect
@@ -258,11 +257,4 @@ replace (
 	k8s.io/csi-translation-lib => k8s.io/csi-translation-lib v0.29.3
 	k8s.io/kubernetes => k8s.io/kubernetes v0.29.3
 	k8s.io/mount-utils => k8s.io/mount-utils v0.29.3
-)
-
-// There is an error with newer versions of prometheus
-// vendor/github.com/prometheus/client_golang/prometheus/testutil/promlint/promlint.go:71:38: undefined: expfmt.FmtText
-replace (
-	github.com/prometheus/client_golang => github.com/prometheus/client_golang v1.18.0
-	github.com/prometheus/common => github.com/prometheus/common v0.45.0
 )
